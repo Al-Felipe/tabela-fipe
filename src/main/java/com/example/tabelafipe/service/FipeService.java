@@ -24,4 +24,8 @@ public class FipeService {
         return consultaUrl("https://parallelum.com.br/fipe/api/v1/carros/marcas");
     }
 
+    public String listarModelos(int idModelo){
+        return consultaUrl("https://parallelum.com.br/fipe/api/v1/carros/marcas/"+ idModelo + "/modelos");
+    }
+
 }
