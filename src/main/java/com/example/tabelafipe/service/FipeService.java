@@ -1,9 +1,10 @@
 package com.example.tabelafipe.service;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-@org.springframework.stereotype.Service
+@Service
 public class FipeService {
 
     public String consultaUrl(String url){

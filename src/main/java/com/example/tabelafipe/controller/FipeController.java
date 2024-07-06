@@ -11,7 +11,7 @@ public class FipeController {
     private FipeService fipeService;
 
     @GetMapping("/marcas")
-    public String test(){
+    public String listarMarcas(){
         return fipeService.listarMarcas();
     }
 }
