@@ -20,4 +20,10 @@ public class FipeController {
     public String listarModelos(@PathVariable int idModelo){
         return fipeService.listarModelos(idModelo);
     }
+
+    @GetMapping("/anos/{modelo}/{marca}")
+    public String consultarAno(@PathVariable int modelo, @PathVariable int marca){
+        return fipeService.consultarAno(modelo, marca);
+    }
+
 }
