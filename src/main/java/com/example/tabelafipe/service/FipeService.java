@@ -32,4 +32,9 @@ public class FipeService {
         return consultaUrl("https://parallelum.com.br/fipe/api/v1/carros/marcas/"+ modelo + "/modelos/" + marca + "/anos");
     }
 
+    public String consultarValor(int modelo, int marca, String ano){
+        return consultaUrl("https://parallelum.com.br/fipe/api/v1/carros/marcas/" + modelo + "/modelos/" + marca +
+                "/anos/" + ano);
+    }
+
 }

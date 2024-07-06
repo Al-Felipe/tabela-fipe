@@ -26,4 +26,9 @@ public class FipeController {
         return fipeService.consultarAno(modelo, marca);
     }
 
+    @GetMapping("/valor/{modelo}/{marca}/{ano}")
+    public String consultarValor(@PathVariable int modelo, @PathVariable int marca, @PathVariable String ano){
+        return fipeService.consultarValor(modelo, marca, ano);
+    }
+
 }
